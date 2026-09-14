@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Personal portfolio showcasing my front-end development projects, skills, and expertise."
+    />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="stylesheet" href="style2.css" />
+
+    <title>Abderraouf Hafi</title>
+
+    <script
+      src="https://kit.fontawesome.com/f19e543f01.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <div class="nav-mark">A. HAFI</div>
+          <ul id="sidemenue">
+            <li><a href="#header" onclick="closemenu()">Home</a></li>
+            <li><a href="#about" onclick="closemenu()">About</a></li>
+            <li><a href="#service" onclick="closemenu()">Services</a></li>
+            <li><a href="#portfolio" onclick="closemenu()">Portfolio</a></li>
+            <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <a class="nav-cta" href="image/CV_Hafi_Abderraouf_Final.pdf" download>Download CV</a>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <!-- ============ HERO ============ -->
+        <div class="hero">
+          <p class="hero-tag">Software engineering student<br />based in Algeria</p>
+
+          <div class="hero-stage">
+            <div class="hero-photo">
+              <img src="image/moi3.jpg" alt="Abderraouf Hafi" />
+            </div>
+            <h1 class="hero-name">Abd erraouf</h1>
+          </div>
+
+          <div class="hero-side">
+            <p class="eyebrow">Open to opportunities<br />------- 2026 -------</p>
+            <div class="hero-actions">
+              <a href="#portfolio" class="btn ">View work</a>
+              <a href="#contact" class="btn">Contact me</a>
+            </div>
+          </div>
+
+          <div class="hero-strip">
+            <div><strong>Frontend</strong>Responsive interfaces, clean code</div>
+            <div><strong>Design</strong>Web design & wireframing in Figma</div>
+            <div><strong>Data</strong>Dashboards, cleaning, visualization</div>
+            <div><strong>Process</strong>Agile / Scrum workflows</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ ABOUT ============ -->
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-2">
+        <h1 class="SUB-TITLE">About me</h1>
+        <p>
+          <span style="font-weight: 600;">Focus area — </span>Expanding my expertise in backend systems and data analysis.<br /><br />
+          <span style="font-weight: 600;">Currently learning — </span>Advanced database architectures, data analysis fundamental, and backend design patterns.<br /><br />
+          <span style="font-weight: 600;">Ask me about — </span>Frontend development, data structures.
+        </p>
+
+        <div class="tab-title">
+          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+          <p class="tab-links" onclick="opentab('experience')">Experience</p>
+          <p class="tab-links" onclick="opentab('education')">Education</p>
+          <p class="tab-links" onclick="opentab('Languages')">Languages</p>
+        </div>
+
+        <!-- ---------- SKILLS ---------- -->
+        <div class="tab-contents active-tab" id="skills">
+          <div class="tab-cards-grid">
+            <!-- SKILL CARD -->
+            <article class="cf-card">
+              <i class="fa-solid fa-code"></i>
+              <h3>Web Development</h3>
+              <span class="cf-meta">Frontend</span>
+              <p>Full-stack engineer with a strong passion and expertise in frontend development.</p>
+            </article>
+
+            
+
+            <!-- SKILL CARD -->
+            <article class="cf-card">
+              <i class="fa-brands fa-figma"></i>
+              <h3>UI / UX</h3>
+              <span class="cf-meta">Design</span>
+              <p>Specializing in web design and interactive wireframes.</p>
+            </article>
+
+            <!-- SKILL CARD -->
+            <article class="cf-card">
+              <i class="fa-solid fa-people-group"></i>
+              <h3>Agile Frameworks</h3>
+              <span class="cf-meta">Process</span>
+              <p>Agile Master experience facilitating Scrum workflows.</p>
+            </article>
+          </div>
+          <div class="tab-see-more"><a href="skills.html" class="btn">See all skills</a></div>
+        </div>
+
+        <!-- ---------- EXPERIENCE ---------- -->
+        <div class="tab-contents" id="experience">
+          <div class="tab-cards-grid">
+            <!-- EXPERIENCE CARD -->
+            <article class="cf-card">
+              <i class="fa-solid fa-briefcase"></i>
+              <h3>Data Analysis Intern</h3>
+              <span class="cf-meta">SGA</span>
+              <p>Built interactive dashboards with Power BI and Excel for data visualization and reporting. Collaborated in an Agile environment with team members.</p>
+            </article>
+
+            <!-- EXPERIENCE CARD -->
+            <article class="cf-card">
+              <i class="fa-solid fa-bullhorn"></i>
+              <h3>Project & Marketing Lead</h3>
+              <span class="cf-meta">Micro Club Ideathon</span>
+              <p>Directed team strategy, product positioning, and final pitching during the competition.</p>
+            </article>
+
+            <!-- EXPERIENCE CARD -->
+            <article class="cf-card">
+              <i class="fa-solid fa-laptop-code"></i>
+              <h3>Full-Stack Web Developer</h3>
+              <span class="cf-meta">USTHB Academic Platform</span>
+              <p>Designed an all-in-one portal to coordinate tasks between students, teachers, and administration.</p>
+            </article>
+          </div>
+          <div class="tab-see-more"><a href="experience.html" class="btn">See all experience</a></div>
+        </div>
+
+        <!-- ---------- EDUCATION ---------- -->
+        <div class="tab-contents" id="education">
+          <div class="tab-cards-grid">
+            <!-- EDUCATION CARD -->
+            <article class="cf-card">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <h3>3rd-Year Computer Science (ISIL)</h3>
+              <span class="cf-meta">USTHB · 2026–2027</span>
+              <p>Specializing in information systems and software engineering. Focused on web development, database management, and software architecture.</p>
+            </article>
+
+            <!-- EDUCATION CARD -->
+            <article class="cf-card">
+              <i class="fa-solid fa-school"></i>
+              <h3>Baccalaureate — Mathematics</h3>
+              <span class="cf-meta">High School · 2023–2024</span>
+              <p>Graduated with good standing, specializing in advanced mathematics, physics, and technical sciences.</p>
+            </article>
+          </div>
+          <div class="tab-see-more"><a href="education.html" class="btn">See all education</a></div>
+        </div>
+
+         <!-- ---------- Languages ---------- -->
+        <div class="tab-contents" id="Languages">
+          <div class="tab-cards-grid">
+            <!-- Languages CARD -->
+            <article class="cf-card">
+              <i class="fa-solid fa-language"></i>
+              <h3>Arabic</h3>
+              <span class="cf-meta">Native / Mother Tongue</span>
+              <p>Fluent in written and spoken communication for professional and technical environments.</p>
+            </article>
+
+            <!-- Languages CARD -->
+            <article class="cf-card">
+              <i class="fa-solid fa-globe"></i>
+              <h3>English</h3>
+              <span class="cf-meta">B1 Level</span>
+              <p>Proficient in technical documentation, software development resources, and international collaboration.</p>
+            </article>
+
+              <article class="cf-card">
+              <i class="fa-solid fa-comments"></i>
+              <h3>French</h3>
+              <span class="cf-meta">B1 Level</span>
+              <p>Capable of handling academic coursework and technical reading.</p>
+            </article>
+
+          </div>
+        </div>
+
+        
+
+      </div>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ SERVICES  ============ -->
+    <div id="service">
+      <div class="container">
+        <h1 class="service">Service</h1>
+
+        <div class="coverflow" data-coverflow style="margin-top:40px;">
+          <button class="cf-btn cf-prev" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+          <div class="coverflow-track">
+
+            <!-- SERVICE CARD -->
+            <article class="cf-card">
+              <i class="fa-solid fa-code"></i>
+              <h3>Web Development</h3>
+              <p>Building responsive, modern front-end web interfaces with smooth navigation and clean code.</p>
+            </article>
+
+            <!-- SERVICE CARD -->
+            <article class="cf-card">
+              <i class="fa-brands fa-figma"></i>
+              <h3>UI/UX & Web Design</h3>
+              <p>Creating simple, intuitive web designs and interactive wireframes in Figma.</p>
+            </article>
+
+            <!-- SERVICE CARD -->
+            <article class="cf-card">
+              <i class="fa-solid fa-square-poll-vertical"></i>
+              <h3>Data Analysis & AI</h3>
+              <p>Transforming data into Power BI visual dashboards.</p>
+            </article>
+
+
+          </div>
+          <button class="cf-btn cf-next" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ PORTFOLIO  ============ -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="service">My work</h1>
+
+        <div class="coverflow" data-coverflow style="margin-top:40px;">
+          <button class="cf-btn cf-prev" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+          <div class="coverflow-track">
+
+            <!-- WORK CARD  -->
+            <article class="cf-card cf-work">
+              <img src="image/projet1.png" alt="Progresse 2.0" />
+              <div class="cf-work-body">
+                <h3>Progresse 2.0</h3>
+                <span class="cf-meta">PHP · MySQL · JavaScript · HTML/CSS</span>
+                <p>Academic management platform: dashboards, secure login, and automated grade processing.</p>
+                <div class="cf-work-links"><a href="https://github.com/hfabderraouf/progresse2.0.git" target="_blank">View on GitHub →</a></div>
+              </div>
+            </article>
+
+            <!-- WORK CARD -->
+            <article class="cf-card cf-work">
+              <img src="image/projet4.jpg" alt="AI Image Generator" />
+              <div class="cf-work-body">
+                <h3>AI Image Generator</h3>
+                <span class="cf-meta">HTML5 · CSS3 · JavaScript · Git</span>
+                <p>A web app that generates images from text prompts using an AI model API, with a clean interface for entering prompts and viewing results.</p>
+                <div class="cf-work-links"><a href="https://github.com/hfabderraouf/AI-Image-Generator.git" target="_blank">View on GitHub →</a></div>
+              </div>
+            </article>
+
+          
+
+            <!-- WORK CARD -->
+            <article class="cf-card cf-work">
+              <img src="image/projet2.png" alt="Wordle Solver" />
+              <div class="cf-work-body">
+                <h3>Wordle Solver</h3>
+                <span class="cf-meta">C · Algorithms</span>
+                <p>An intelligent Wordle solver web tool that analyzes color-coded feedback after each guess to suggest the most optimal 5-letter word candidates.</p>
+                <div class="cf-work-links"><a href="https://github.com/hfabderraouf/wordle-solver.git" target="_blank">View on GitHub →</a></div>
+              </div>
+            </article>
+
+
+          </div>
+          <button class="cf-btn cf-next" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+
+        <div class="see-all-link"><a href="work.html" class="btn btn-solid">See more</a></div>
+      </div>
+    </div>
+
+  
+
+    <!-- ============ CONTACT ============ -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="service">Contact me</h1>
+            <p><i class="fa-solid fa-envelope"></i> hafi.abderraouf01@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> +213 556746072</p>
+            <div class="social-icons">
+                <a href="https://github.com/hfabderraouf"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/abderraouf-hafi-674ba2371"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://x.com/hfabderraouf"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://t.me/HFABDERRAOUF"><i class="fa-brands fa-telegram"></i></a>
+                <a href="https://discord.com/users/1284642621947514921"><i class="fa-brands fa-discord"></i></a>
+            </div>
+          </div>
+          <div class="content-right">
+            <form action="https://formspree.io/f/mnpqvnlw" method="POST">
+                <input type="text" name="Name" placeholder="Your name" required>
+                <input type="email" name="Email" placeholder="Your email" required>
+                <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy; 2026 Abderraouf. All rights reserved <i class="fa-solid fa-check"></i></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

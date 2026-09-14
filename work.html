@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style2.css" />
+    <title>Work — Abderraouf Hafi</title>
+    <script src="https://kit.fontawesome.com/f19e543f01.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="header" style="min-height:auto;">
+      <div class="container">
+        <nav>
+          <div class="nav-mark">A. HAFI</div>
+          <ul id="sidemenue">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#service">Services</a></li>
+            <li><a href="index.html#portfolio">Portfolio</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <a class="nav-cta" href="image/CV_Hafi_Abderraouf_Final.pdf" download>Download CV</a>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+      </div>
+    </div>
+
+    <div class="detail-hero">
+      <a class="back" href="index.html#portfolio">← Back to portfolio</a>
+      <h1>All work</h1>
+    </div>
+
+    <div class="card-grid">
+
+      <!-- WORK CARD -->
+      <article class="detail-card work-card">
+        <img src="image/projet1.png" alt="Progresse 2.0" />
+        <div class="work-card-body">
+          <h3>Progresse 2.0</h3>
+          <span class="cf-meta">PHP · MySQL · JavaScript · HTML/CSS</span>
+          <p>Academic management platform: dashboards, secure login, and automated grade processing.</p>
+          <a href="https://github.com/hfabderraouf/progresse2.0.git" target="_blank">View on GitHub →</a>
+        </div>
+      </article>
+
+      <!-- WORK CARD -->
+      <article class="detail-card work-card">
+        <img src="image/projet4.jpg" alt="AI Image Generator" />
+        <div class="work-card-body">
+          <h3>AI Image Generator</h3>
+          <span class="cf-meta">HTML5 · CSS3 · JavaScript · Git</span>
+          <p>A web app that generates images from text prompts using an AI model API, with a clean interface for entering prompts and viewing results.</p>
+          <a href="https://github.com/hfabderraouf/AI-Image-Generator.git" target="_blank">View on GitHub →</a>
+        </div>
+      </article>
+
+  
+
+      <!-- WORK CARD -->
+      <article class="detail-card work-card">
+        <img src="image/projet2.png" alt="Wordle Solver" />
+        <div class="work-card-body">
+          <h3>Wordle Solver</h3>
+          <span class="cf-meta">C · Algorithms</span>
+          <p>An intelligent Wordle solver web tool that analyzes color-coded feedback after each guess to suggest the most optimal 5-letter word candidates.</p>
+          <a href="https://github.com/hfabderraouf/wordle-solver.git" target="_blank">View on GitHub →</a>
+        </div>
+      </article>
+
+      <!-- ADD A NEW PROJECT: duplicate one <article class="detail-card work-card">...</article> block above, right here.
+           This page can hold unlimited projects — the homepage will still only ever show its first 4. -->
+
+    </div>
+
+    <div class="copyright">
+      <p>Copyright &copy; 2026 Abderraouf. All rights reserved <i class="fa-solid fa-check"></i></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
