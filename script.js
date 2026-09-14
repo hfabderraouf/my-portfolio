@@ -1,3 +1,23 @@
+/* =========================================================
+   MOBILE NAVIGATION MENU
+   ========================================================= */
+var sidemenue = document.getElementById("sidemenue");
+
+function openmenu() {
+    if (sidemenue) {
+        sidemenue.style.right = "0";
+    }
+}
+
+function closemenu() {
+    if (sidemenue) {
+        sidemenue.style.right = "-220px";
+    }
+}
+
+/* =========================================================
+   INTERACTIVE ENGINE & COVERFLOW
+   ========================================================= */
 (function () {
     function init3DCoverflow(root) {
         var track = root.querySelector('.coverflow-track');
